@@ -5,9 +5,9 @@ export default function RedoAnimText() {
   const textIndex = useMotionValue(0);
   const texts = [
     "I'm a full stack developer!",
-    "I am the best candidate for this job.",
     "I use Arch, btw.",
     "One must imagine sisyphus happy. - Albert Camus",
+    "I am the best candidate for this job.",
     "Walking the tightrope balance of project management.",
     "I find myself compelled to express my interest due to...",
     "My pen (or should I say, keyboard) is at work today because.",
@@ -26,11 +26,11 @@ export default function RedoAnimText() {
   useEffect(() => {
     animate(count, 60, {
       type: "tween",
-      duration: 3,
+      duration: 2,
       ease: "easeIn",
       repeat: Infinity,
       repeatType: "reverse",
-      repeatDelay: 2,
+      repeatDelay: 1,
       onUpdate(latest) {
         if (updatedThisRound.get() === true && latest > 0) {
           updatedThisRound.set(false);

@@ -1,5 +1,6 @@
 "use client";
 
+import ArchASCII from "@/components/ArchASCII";
 import HeroSection from "@/components/Sections/HeroSection";
 
 
@@ -15,7 +16,7 @@ export default function Home() {
           Skills Section
         </div>
         <div className="scollable h-screen snap-start snap-always text-3xl flex justify-center items-center">
-          I use Arch BTW.
+          <ArchASCII />
         </div>
         <div className="scollable h-screen snap-start snap-always text-3xl flex justify-center items-center">
           About Me
